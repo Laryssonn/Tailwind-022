@@ -3,3 +3,8 @@
 @theme {
   --color-larysson-vermelho: #F00;
 }
+
+.card {
+  @apply p-6 mx-6 mt-6 rounded-md border border-zinc-200;
+  background: linear-gradient(var(--color-zinc-50), var(--color-red-300));
+}
