@@ -8,10 +8,10 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-100: oklch(93.6% 0.032 17.717);
     --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-red-700: oklch(50.5% 0.213 27.518);
+    --color-red-950: oklch(25.8% 0.092 26.042);
+    --color-green-950: oklch(26.6% 0.065 152.934);
     --color-emerald-500: oklch(69.6% 0.17 162.48);
     --color-blue-50: oklch(97% 0.014 254.604);
     --color-blue-500: oklch(62.3% 0.214 259.815);
@@ -194,20 +194,11 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -239,9 +230,6 @@
   .bg-larysson-vermelho {
     background-color: var(--color-larysson-vermelho);
   }
-  .bg-red-100 {
-    background-color: var(--color-red-100);
-  }
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
@@ -264,13 +252,6 @@
   }
   .italic {
     font-style: italic;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -375,19 +356,11 @@
     background-color: var(--color-zinc-500);
   }
   @media (width >= 40rem) {
-    .sm\:inline {
-      display: inline;
-    }
     .sm\:bg-red-300 {
       background-color: var(--color-red-300);
     }
     @media (width < 64rem) {
       .sm\:max-lg\:inline {
-        display: inline;
-      }
-    }
-    @media (width < 40rem) {
-      .sm\:max-sm\:inline {
         display: inline;
       }
     }
@@ -405,9 +378,6 @@
     .lg\:bg-blue-700 {
       background-color: var(--color-blue-700);
     }
-    .lg\:bg-red-700 {
-      background-color: var(--color-red-700);
-    }
   }
   .\[\&_span\]\:text-blue-500 span {
     color: var(--color-blue-500);
@@ -423,6 +393,16 @@
   padding: calc(var(--spacing) * 6);
   background: linear-gradient(var(--color-zinc-50), var(--color-red-300));
 }
+@media (width >= 40rem) {
+  body {
+    background: var(--color-green-950);
+  }
+}
+@media (width >=1080px) {
+  body {
+    background: var(--color-red-950);
+  }
+}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
@@ -436,11 +416,6 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-duration {
   syntax: "*";
@@ -472,7 +447,6 @@
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-content: "";
       --tw-scale-x: 1;

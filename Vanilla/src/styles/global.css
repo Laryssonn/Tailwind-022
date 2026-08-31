@@ -8,3 +8,15 @@
   @apply p-6 mx-6 mt-6 rounded-md border border-zinc-200;
   background: linear-gradient(var(--color-zinc-50), var(--color-red-300));
 }
+
+@variant sm {
+  body {
+    background: var(--color-green-950);
+  }
+}
+
+@media (width >=1080px) {
+  body {
+    background: var(--color-red-950);
+  }
+}
