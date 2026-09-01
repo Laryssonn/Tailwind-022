@@ -197,20 +197,11 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -242,9 +233,6 @@
   .bg-larysson-vermelho {
     background-color: var(--color-larysson-vermelho);
   }
-  .p-1 {
-    padding: var(--spacing);
-  }
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
@@ -267,13 +255,6 @@
   }
   .italic {
     font-style: italic;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -450,11 +431,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -485,7 +461,6 @@
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-content: "";
       --tw-scale-x: 1;

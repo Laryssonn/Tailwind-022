@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "watch:tw": "tailwindcss -i ./src/styles/global.css -o ./src/styles/index.css --watch"
+    "tw:watch": "tailwindcss -i ./src/styles/global.css -o ./src/styles/index.css --watch",
+    "tw:build": "tailwindcss -i ./src/styles/global.css -o ./src/styles/index.min.css --minify"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
